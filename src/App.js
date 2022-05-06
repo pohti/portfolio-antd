@@ -1,6 +1,7 @@
 import './App.css';
 
 import { Layout } from 'antd';
+import CustomHeader from './components/Header/CustomHeader';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -8,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <Header>Header</Header>
+        <Header>
+          <CustomHeader/>
+        </Header>
         <Layout class="middle-layout">
           <Sider>Sider</Sider>
           <Content>Content</Content>
