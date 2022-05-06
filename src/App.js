@@ -2,6 +2,7 @@ import './App.css';
 
 import { Layout } from 'antd';
 import CustomHeader from './components/Header/CustomHeader';
+import CustomFooter from './components/Footer/CustomFooter';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -12,11 +13,15 @@ function App() {
         <Header>
           <CustomHeader/>
         </Header>
+
         <Layout class="middle-layout">
           <Sider>Sider</Sider>
           <Content>Content</Content>
         </Layout>
-        <Footer>Footer</Footer>
+
+        <Footer>
+          <CustomFooter />
+        </Footer>
       </Layout>
     </div>
   );

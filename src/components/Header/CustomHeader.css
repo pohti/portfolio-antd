@@ -2,8 +2,8 @@
     color: var(--main-font-color);
 }
 
-.header-icon-container {
-    padding-top: var(--header-padding-top);
+.header-icon-container, .header-menu {
+    /* padding-top: var(--header-padding-top); */
 }
 
 .header-icon, .header-icon-text {
@@ -15,7 +15,6 @@
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
     height: 10vh;
-    padding-top: var(--header-padding-top);
     justify-content: end;
     border-bottom-width: 0;
 }
