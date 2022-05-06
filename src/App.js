@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Layout>
         <Header>Header</Header>
-        <Layout>
+        <Layout class="middle-layout">
           <Sider>Sider</Sider>
           <Content>Content</Content>
         </Layout>
