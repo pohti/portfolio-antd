@@ -17,10 +17,12 @@ export default class CustomFooter extends Component {
         className="footer-row"
       >
         <Col span={2}>
-          <LinkedinOutlined />
+          <a target="_blank" href="https://www.linkedin.com/in/minmarnoo/">
+            <LinkedinOutlined/>
+          </a>
         </Col>
         <Col span={2}>
-          <GithubOutlined />
+          <a target="_blank" href="https://github.com/pohti?tab=repositories"><GithubOutlined /></a>
         </Col>
         <Col span={2}>
           <PhoneOutlined />
