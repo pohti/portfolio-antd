@@ -4,6 +4,8 @@ import { Layout } from 'antd';
 import CustomHeader from './components/Header/CustomHeader';
 import CustomFooter from './components/Footer/CustomFooter';
 
+import About from './components/Content/About/About'
+
 const { Header, Footer, Content } = Layout;
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
           <Content>Content</Content>
         </Layout> */}
 
-        <Content>Content</Content>
+        <Content>
+          <About/>
+        </Content>
 
         <Footer>
           <CustomFooter />

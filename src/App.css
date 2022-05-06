@@ -15,10 +15,9 @@
 }
 .ant-layout-header,
 .ant-layout-footer {
-  color: #fff;
+  color: var(--main-font-color);
   background: var(--main-bg-color);
-  height: 10vh;
-
+  height: 8vh;
 }
 /* .ant-layout-header {
   padding-top: 15px;
@@ -37,7 +36,7 @@
 }
 
 .ant-layout-sider {
-  color: #fff;
+  color: var(--main-font-color);
   line-height: 120px;
   padding-left: 25px;
   background: var(--main-bg-color);
@@ -52,6 +51,6 @@
   padding-left: 25px;
   line-height: 120px;
   background: var(--main-bg-color);
-  height: 80vh;
+  height: 84vh;
 }
 
