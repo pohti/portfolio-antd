@@ -6,3 +6,11 @@ a {
     text-decoration: none;
     color: var(--main-font-color)
 }
+
+/* .ant-popover-inner-content  {
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color)
+}
+
+.ant-popover .ant-popover-placement-top {
+} */
