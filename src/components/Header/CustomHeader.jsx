@@ -7,7 +7,17 @@ import './CustomHeader.css'
 const { Text } = Typography
 const { Item } = Menu
 
+const menuItems = [
+    { label: 'About', key: 'about' },
+    { label: 'Work', key: 'work' },
+    { label: 'Education', key: 'education' },
+]
+
 export default class CustomHeader extends Component {
+    handleMenuItemClick = ({key}) => {
+        console.log("Menu item clicked", key)
+    }
+
     render() {
         return (
             <div>
@@ -26,11 +36,9 @@ export default class CustomHeader extends Component {
                         <Menu
                             mode="horizontal"
                             className="header-menu"
-                        >
-                            <Item>Item 1</Item>
-                            <Item>Item 2</Item>
-                            <Item>Item 3</Item>
-                        </Menu>
+                            items={menuItems}
+                            onClick={this.handleMenuItemClick}
+                        />
                     </Col>
                 </Row>
             </div>

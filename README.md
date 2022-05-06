@@ -1,5 +1,5 @@
-# Hello!
-I am Min, Full Stack Software Developer
+# Hello World!
+I am Min, Full Stack Web Developer
 and this is my portfolio web page.
 
 ## Stack

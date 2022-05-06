@@ -2,9 +2,9 @@
     color: var(--main-font-color);
 }
 
-.header-icon-container, .header-menu {
-    /* padding-top: var(--header-padding-top); */
-}
+/* .header-icon-container, .header-menu {
+    
+} */
 
 .header-icon, .header-icon-text {
     color: var(--main-font-color);
