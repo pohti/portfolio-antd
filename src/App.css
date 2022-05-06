@@ -5,6 +5,9 @@
   --main-bg-color: #1e3145;
   --main-border-color: #474a4f7f;
   --main-border-width: 0.1px;
+
+  --header-padding-top: 18px;
+  --header-selected-color: #fff;
 }
 
 .code-box-demo {
@@ -17,9 +20,9 @@
   height: 10vh;
 
 }
-.ant-layout-header {
+/* .ant-layout-header {
   padding-top: 15px;
-}
+} */
 .ant-layout-footer {
   line-height: 1.5;
   border-top-style: solid;
@@ -42,9 +45,7 @@
   border-right-width: var(--main-border-width);
   border-right-color: var(--main-border-color);
 }
-[data-theme="dark"] .ant-layout-sider {
-  background: var(--main-bg-color);
-}
+
 .ant-layout-content {
   min-height: 120px;
   color: #fff;
