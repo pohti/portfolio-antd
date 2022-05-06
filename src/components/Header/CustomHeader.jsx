@@ -8,6 +8,7 @@ const { Text } = Typography
 
 const menuItems = [
     { label: 'About', key: 'about' },
+    { label: 'Skills', key: 'skills' },
     { label: 'Work', key: 'work' },
     { label: 'Education', key: 'education' },
 ]

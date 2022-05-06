@@ -1,7 +1,7 @@
 @import '~antd/dist/antd.css';
 
 :root {
-  --main-font-color: #fff;
+  --main-font-color: rgb(139, 211, 214);
   --main-bg-color: #1e3145;
   --main-border-color: #474a4f7f;
   --main-border-width: 0.1px;
@@ -48,7 +48,7 @@
 
 .ant-layout-content {
   min-height: 120px;
-  color: #fff;
+  color: var(--main-font-color);
   padding-left: 25px;
   line-height: 120px;
   background: var(--main-bg-color);
