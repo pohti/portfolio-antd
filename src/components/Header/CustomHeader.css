@@ -14,7 +14,7 @@
 .header-menu {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    height: 10vh;
+    height: 8vh;
     justify-content: end;
     border-bottom-width: 0;
 }
@@ -28,4 +28,9 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--header-selected-color);
+}
+
+.ant-menu-title-content > a {
+    text-decoration: none;
+    color: var(--main-font-color) !important;
 }

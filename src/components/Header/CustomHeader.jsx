@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { Row, Col, Typography, Menu } from 'antd'
 import { HomeOutlined } from '@ant-design/icons'
 
@@ -7,10 +8,10 @@ import './CustomHeader.css'
 const { Text } = Typography
 
 const menuItems = [
-    { label: 'About', key: 'about' },
-    { label: 'Skills', key: 'skills' },
-    { label: 'Work', key: 'work' },
-    { label: 'Education', key: 'education' },
+    { label: <Link to="/about">About</Link>, key: 'about' },
+    { label: <Link to="/skills">Skills</Link>, key: 'skills' },
+    { label: <Link to="/work">Work</Link>, key: 'work' },
+    { label: <Link to="/education">Education</Link>, key: 'education' },
 ]
 
 export default class CustomHeader extends Component {
@@ -25,10 +26,11 @@ export default class CustomHeader extends Component {
                     <Col span={8}>
                         <Row gutter={16} className="header-icon-container">
                             <Col >
-                                <HomeOutlined className="header-icon" />
+                                <Link to="/"><HomeOutlined className="header-icon" /></Link>
                             </Col>
                             <Col>
-                                <Text className="header-icon-text">Username</Text>
+                                <Link to="/"><Text className="header-icon-text">Username</Text></Link>
+                                
                             </Col>
                         </Row>
                     </Col>
