@@ -1,6 +1,7 @@
 @import '~antd/dist/antd.css';
 
 :root {
+  --main-font-color: #fff;
   --main-bg-color: #1e3145;
   --main-border-color: #474a4f7f;
   --main-border-width: 0.1px;

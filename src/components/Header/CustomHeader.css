@@ -1,0 +1,8 @@
+.header-row {
+    color: var(--main-font-color)
+}
+
+.header-icon, .header-icon-text {
+    color: var(--main-font-color);
+    font-size: 18px;
+}

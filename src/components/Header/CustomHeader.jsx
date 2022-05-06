@@ -1,17 +1,25 @@
 import React, { Component } from 'react'
-import { Row, Col } from 'antd'
+import { Row, Col, Typography } from 'antd'
 import { HomeOutlined } from '@ant-design/icons'
+
+import './CustomHeader.css'
+
+const { Text } = Typography
+
+
 
 export default class CustomHeader extends Component {
   render() {
     return (
       <div>
-          <Row>
+          <Row className="header-row">
               <Col span={8}>
-                <Row gutter={16}>
-                    <Col><HomeOutlined /></Col>
+                <Row gutter={16} className="header-icon-container">
+                    <Col >
+                        <HomeOutlined className="header-icon"/>
+                    </Col>
                     <Col>
-                        <span>Min Marn Oo</span>
+                        <Text className="header-icon-text">Username</Text>
                     </Col>
                 </Row>
               </Col>
