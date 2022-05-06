@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 import CustomHeader from './components/Header/CustomHeader';
 import CustomFooter from './components/Footer/CustomFooter';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 function App() {
   return (
@@ -14,10 +14,12 @@ function App() {
           <CustomHeader/>
         </Header>
 
-        <Layout class="middle-layout">
+        {/* <Layout class="middle-layout">
           <Sider>Sider</Sider>
           <Content>Content</Content>
-        </Layout>
+        </Layout> */}
+
+        <Content>Content</Content>
 
         <Footer>
           <CustomFooter />
