@@ -5,7 +5,6 @@ import { HomeOutlined } from '@ant-design/icons'
 import './CustomHeader.css'
 
 const { Text } = Typography
-const { Item } = Menu
 
 const menuItems = [
     { label: 'About', key: 'about' },

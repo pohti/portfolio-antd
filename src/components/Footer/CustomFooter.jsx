@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Typography, Popover, Tooltip } from 'antd'
+import { Row, Col, Popover, Tooltip } from 'antd'
 import {
   LinkedinOutlined,
   GithubOutlined,
@@ -7,8 +7,6 @@ import {
   MailOutlined
 } from '@ant-design/icons'
 import './CustomFooter.css'
-
-const { Text } = Typography
 
 export default class CustomFooter extends Component {
   render() {
@@ -18,14 +16,24 @@ export default class CustomFooter extends Component {
       >
         <Col span={2}>
           <Tooltip title="Check out my LinkedIn profile">
-            <a target="_blank" href="https://www.linkedin.com/in/minmarnoo/">
+            <a 
+              target="_blank" 
+              href="https://www.linkedin.com/in/minmarnoo/"
+              rel="noreferrer"
+            >
               <LinkedinOutlined />
             </a>
           </Tooltip>
         </Col>
         <Col span={2}>
           <Tooltip title="Check out my GitHub profile">
-            <a target="_blank" href="https://github.com/pohti?tab=repositories"><GithubOutlined /></a>
+            <a 
+              target="_blank" 
+              href="https://github.com/pohti?tab=repositories"
+              rel="noreferrer"
+            >
+              <GithubOutlined />
+            </a>
           </Tooltip>
         </Col>
         <Col span={2}>
