@@ -14,7 +14,7 @@
 .header-menu {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    height: 10vh;
+    /* min-height: var(--header-and-footer-min-height); */
     justify-content: end;
     border-bottom-width: 0;
     font-size: 15px;

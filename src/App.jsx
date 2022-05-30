@@ -12,33 +12,31 @@ import Education from './components/Content/Education/Education'
 const { Header, Footer, Content } = Layout;
 
 function App() {
+  // console.log(window.innerHeight)
+  // const contentHeight = window.innerHeight - 133
+
   return (
-    <div className="App">
-      <Layout>
-        <Header>
-          <CustomHeader/>
-        </Header>
+    <Layout>
+      <Header>
+        <CustomHeader />
+      </Header>
 
-        {/* <Layout class="middle-layout">
-          <Sider>Sider</Sider>
-          <Content>Content</Content>
-        </Layout> */}
+      <Content
+      //style={{ height: contentHeight }}
+      >
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="about" element={<About />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="work" element={<Work />} />
+          <Route path="education" element={<Education />} />
+        </Routes>
+      </Content>
 
-        <Content>
-          <Routes>
-            <Route path="/" element={<About/>}/>
-            <Route path="about" element={<About/>}/>
-            <Route path="skills" element={<Skills/>}/>
-            <Route path="work" element={<Work/>}/>
-            <Route path="education" element={<Education/>}/>
-          </Routes>
-        </Content>
-
-        <Footer>
-          <CustomFooter />
-        </Footer>
-      </Layout>
-    </div>
+      <Footer>
+        <CustomFooter />
+      </Footer>
+    </Layout>
   );
 }
 

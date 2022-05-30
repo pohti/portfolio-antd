@@ -8,11 +8,12 @@
 
   --header-padding-top: 18px;
   --header-selected-color: rgb(217, 139, 84);
+  --header-and-footer-min-height: 40px;
 
   --all-padding-horizontal-xl: 5vw;
 }
 
-.App {
+.ant-layout {
   min-height: 100vh;
 }
 
@@ -23,7 +24,7 @@
 .ant-layout-footer {
   color: var(--main-font-color);
   background: var(--main-bg-color);
-  min-height: 40px;
+  min-height: var(--header-and-footer-min-height);
 }
 /* .ant-layout-header {
   padding-top: 15px;
@@ -44,12 +45,13 @@
 }
 
 .ant-layout-content {
-  min-height: 120px;
+  /* min-height: 120px; */
   color: var(--main-font-color);
   padding-left: var(--all-padding-horizontal-xl);
   padding-right: var(--all-padding-horizontal-xl);
-  line-height: 120px;
+  line-height: 80px;
   background: var(--main-bg-color);
+  flex: 1 1 auto;
   height: 100%;
 }
 
