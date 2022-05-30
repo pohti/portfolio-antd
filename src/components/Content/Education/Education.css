@@ -1,0 +1,42 @@
+.education-main-div {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: blue; */
+
+  padding-top: 40px;
+  padding-left: 15vw;
+  padding-right: 10vw;
+  padding-bottom: 10px;
+
+  height: 100%;
+  line-height: 30px;
+}
+
+.education-timeline {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: green; */
+
+  padding: 20px;
+  color: var(--main-font-color);
+  width: 90%;
+}
+
+.timeline-label {
+  font-size: 18px;
+}
+
+.timeline-content {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: red; */
+  height: 115px;
+}
+
+.timeline-item-title {
+  font-size: 20px;
+}
+
+.timeline-item-subtitle {
+  font-size: 17px;
+}

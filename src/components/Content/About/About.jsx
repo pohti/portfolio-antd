@@ -3,8 +3,6 @@ import { Row, Col, Image } from 'antd'
 import AboutTextContent from './AboutTextContent'
 import './About.css'
 
-
-
 const imgURL = "https://media-exp1.licdn.com/dms/image/C5103AQFr27-SuBeXeg/profile-displayphoto-shrink_800_800/0/1517233913057?e=1659571200&v=beta&t=yUtgQb-nB9mtlAXV4V5wwMyExlthxRNPXJquTA9ahYc"
 
 export default class About extends Component {
