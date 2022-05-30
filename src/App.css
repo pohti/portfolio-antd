@@ -23,7 +23,7 @@
 .ant-layout-footer {
   color: var(--main-font-color);
   background: var(--main-bg-color);
-  height: 10vh;
+  min-height: 40px;
 }
 /* .ant-layout-header {
   padding-top: 15px;
@@ -43,16 +43,6 @@
   border-top-color: var(--main-border-color);
 }
 
-/* .ant-layout-sider {
-  color: var(--main-font-color);
-  line-height: 120px;
-  padding-left: 25px;
-  background: var(--main-bg-color);
-  border-right-style: solid;
-  border-right-width: var(--main-border-width);
-  border-right-color: var(--main-border-color);
-} */
-
 .ant-layout-content {
   min-height: 120px;
   color: var(--main-font-color);
@@ -60,7 +50,7 @@
   padding-right: var(--all-padding-horizontal-xl);
   line-height: 120px;
   background: var(--main-bg-color);
-  height: 80vh;
+  height: 100%;
 }
 
 /* md: >= 768px */

@@ -40,7 +40,7 @@ export default class CustomHeader extends Component {
                                 <Link to="/" onClick={this.resetMenuHighlight}><HomeOutlined className="header-icon" /></Link>
                             </Col>
                             <Col>
-                                <Link to="/"><Text className="header-icon-text">Username</Text></Link>
+                                <Link to="/" onClick={this.resetMenuHighlight}><Text className="header-icon-text">Username</Text></Link>
                             </Col>
                         </Row>
                     </Col>
