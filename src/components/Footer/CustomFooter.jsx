@@ -11,10 +11,10 @@ import './CustomFooter.css'
 export default class CustomFooter extends Component {
   render() {
     return (
-      <Row gutter={10} justify="center"
+      <Row gutter={[16, 16]} justify="center"
         className="footer-row"
       >
-        <Col span={2}>
+        <Col span={2} xs={4}>
           <Tooltip title="Check out my LinkedIn profile">
             <a 
               target="_blank" 
@@ -25,7 +25,7 @@ export default class CustomFooter extends Component {
             </a>
           </Tooltip>
         </Col>
-        <Col span={2}>
+        <Col span={2} xs={4}>
           <Tooltip title="Check out my GitHub profile">
             <a 
               target="_blank" 
@@ -36,7 +36,7 @@ export default class CustomFooter extends Component {
             </a>
           </Tooltip>
         </Col>
-        <Col span={2}>
+        <Col span={2} xs={4}>
           <Popover
             content={"+65 8815 6448"}
             title={null}
@@ -44,7 +44,7 @@ export default class CustomFooter extends Component {
             <PhoneOutlined />
           </Popover>
         </Col>
-        <Col span={2}>
+        <Col span={2} xs={4}>
           <Popover
             content={"minmarnoo@gmail.com"}
             title={null}

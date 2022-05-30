@@ -32,12 +32,12 @@ export default class Education extends Component {
         </div>
 
 
-        <div className="education-main-div" style={{ paddingTop: "20px" }}>
+        <div className="education-main-div">
           <div style={{ fontSize: "140%" }}>
             <b>Certificates</b>
           </div>
           <Timeline className="education-timeline">
-            <Item style={{ height: "100px" }}>
+            <Item style={{ minHeight: "100px" }}>
               <TimelineContent
                 label="Nov 2021"
                 title="AWS Certified: Solutions Architect - Associate"

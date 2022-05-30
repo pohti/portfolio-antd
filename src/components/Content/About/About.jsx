@@ -11,8 +11,8 @@ export default class About extends Component {
       <Row
         className="about-main-div"
         gutter={[16, 16]}
-        justify="space-evenly"
-        wrap
+        justify="center"
+        //wrap
       >
         <Col span={6} >
           <div className="image-container">

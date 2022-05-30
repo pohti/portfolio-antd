@@ -17,7 +17,7 @@ const menuItems = [
 export default class CustomHeader extends Component {
 
     state = {
-        selectedMenuKeys: ['about']
+        selectedMenuKeys: []
     }
 
     handleMenuItemClick = ({key}) => {
@@ -27,6 +27,11 @@ export default class CustomHeader extends Component {
 
     resetMenuHighlight = () => {
         this.setState({ selectedMenuKeys: ['about'] })
+    }
+
+    componentDidMount () {
+        const path = extractPath()
+        this.setState({ selectedMenuKeys: [path] })
     }
 
     render() {
@@ -59,4 +64,10 @@ export default class CustomHeader extends Component {
             </div>
         )
     }
+}
+
+const extractPath = () => {
+    let path_arr = window.location.href.split('/')
+    let path = path_arr[path_arr.length - 1]
+    return path
 }
