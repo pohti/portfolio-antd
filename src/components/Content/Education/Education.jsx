@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import { Timeline } from 'antd'
+import {
+  ReadOutlined,
+  TrophyOutlined
+} from '@ant-design/icons'
 import './Education.css'
 
 const { Item } = Timeline
@@ -9,7 +13,10 @@ export default class Education extends Component {
     return (
       <div className="education-main-div">
         <div className="education-timeline-div">
-          <div style={{ fontSize: "140%" }}>
+          <div className="timeline-title-row">
+            <div className="timeline-title-icon">
+              <ReadOutlined />
+            </div>
             <b>Education</b>
           </div>
           <Timeline className="education-timeline">
@@ -33,7 +40,10 @@ export default class Education extends Component {
 
 
         <div className="certificate-timeline-div">
-          <div style={{ fontSize: "140%" }}>
+          <div className="timeline-title-row">
+            <div className="timeline-title-icon">
+              <TrophyOutlined />
+            </div>
             <b>Certificates</b>
           </div>
           <Timeline className="education-timeline">

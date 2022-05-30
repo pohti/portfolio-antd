@@ -8,7 +8,7 @@ import './CustomHeader.css'
 const { Text } = Typography
 
 const menuItems = [
-    { label: <Link to="/about">About</Link>, key: 'about' },
+    // { label: <Link to="/about">About</Link>, key: 'about' },
     { label: <Link to="/skills">Skills</Link>, key: 'skills' },
     { label: <Link to="/work">Work</Link>, key: 'work' },
     { label: <Link to="/education">Education</Link>, key: 'education' },

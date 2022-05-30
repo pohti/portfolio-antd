@@ -1,5 +1,7 @@
-div.ant-col {
-    font-size: 18px;
+.footer-row > div.ant-col {
+    font-size: var(--global-general-font-size);
+    display: flex;
+    justify-content: center;
 }
 
 a {
