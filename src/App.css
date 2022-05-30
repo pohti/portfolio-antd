@@ -1,13 +1,19 @@
 @import '~antd/dist/antd.css';
 
 :root {
-  --main-font-color: rgb(167, 216, 216);
+  --main-font-color: rgb(217, 139, 84);
   --main-bg-color: #1e3145;
   --main-border-color: #474a4f7f;
   --main-border-width: 0.1px;
 
   --header-padding-top: 18px;
-  --header-selected-color: #fff;
+  --header-selected-color: rgb(217, 139, 84);
+
+  --all-padding-horizontal-xl: 5vw;
+}
+
+.App {
+  min-height: 100vh;
 }
 
 .code-box-demo {
@@ -17,16 +23,18 @@
 .ant-layout-footer {
   color: var(--main-font-color);
   background: var(--main-bg-color);
-  height: 8vh;
+  height: 10vh;
 }
 /* .ant-layout-header {
   padding-top: 15px;
 } */
 .ant-layout-footer {
-  line-height: 1.5;
+  /* line-height: 1.5; */
   border-top-style: solid;
   border-top-width: var(--main-border-width);
   border-top-color: var(--main-border-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .ant-layout-content, .ant-layout-sider {
@@ -35,7 +43,7 @@
   border-top-color: var(--main-border-color);
 }
 
-.ant-layout-sider {
+/* .ant-layout-sider {
   color: var(--main-font-color);
   line-height: 120px;
   padding-left: 25px;
@@ -43,14 +51,19 @@
   border-right-style: solid;
   border-right-width: var(--main-border-width);
   border-right-color: var(--main-border-color);
-}
+} */
 
 .ant-layout-content {
   min-height: 120px;
   color: var(--main-font-color);
-  padding-left: 25px;
+  padding-left: var(--all-padding-horizontal-xl);
+  padding-right: var(--all-padding-horizontal-xl);
   line-height: 120px;
   background: var(--main-bg-color);
-  height: 84vh;
+  height: 80vh;
 }
 
+/* md: >= 768px */
+/* @media only screen and (max-width: 768px) {
+
+} */

@@ -15,31 +15,44 @@ const menuItems = [
 ]
 
 export default class CustomHeader extends Component {
+
+    state = {
+        selectedMenuKeys: ['about']
+    }
+
     handleMenuItemClick = ({key}) => {
-        console.log("Menu item clicked", key)
+        // console.log("Menu item clicked", key)
+        this.setState({ selectedMenuKeys: [key] })
+    }
+
+    resetMenuHighlight = () => {
+        this.setState({ selectedMenuKeys: ['about'] })
     }
 
     render() {
         return (
             <div>
                 <Row className="header-row">
+                    {/* Icon and Username */}
                     <Col span={8}>
                         <Row gutter={16} className="header-icon-container">
-                            <Col >
-                                <Link to="/"><HomeOutlined className="header-icon" /></Link>
+                            <Col>
+                                <Link to="/" onClick={this.resetMenuHighlight}><HomeOutlined className="header-icon" /></Link>
                             </Col>
                             <Col>
                                 <Link to="/"><Text className="header-icon-text">Username</Text></Link>
-                                
                             </Col>
                         </Row>
                     </Col>
+
+                    {/* Header Menu */}
                     <Col span={16}>
                         <Menu
                             mode="horizontal"
                             className="header-menu"
                             items={menuItems}
                             onClick={this.handleMenuItemClick}
+                            selectedKeys={this.state.selectedMenuKeys}
                         />
                     </Col>
                 </Row>
