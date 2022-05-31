@@ -38,8 +38,8 @@ export default class CustomHeader extends Component {
         return (
             <Row className="header-row">
                 {/* Icon and Username */}
-                <Col span={8}>
-                    <Row gutter={16} className="header-icon-container">
+                <Col span={8} className="header-icon-container">
+                    <Row gutter={16}>
                         <Col>
                             <Link to="/" onClick={this.resetMenuHighlight}><HomeOutlined className="header-icon" /></Link>
                         </Col>
