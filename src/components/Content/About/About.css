@@ -43,3 +43,15 @@
   margin-top: 20px;
   line-height: 30px;
 }
+
+@media only screen and (max-width: 768px) {
+  .image-container {
+    padding: 5px;
+  }
+  .profile-pic {
+    width: 150px;
+  }
+  .text-container {
+    padding: 5px;
+  }
+}

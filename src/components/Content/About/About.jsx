@@ -10,11 +10,11 @@ export default class About extends Component {
     return (
       <Row
         className="about-main-div"
-        gutter={[16, 16]}
+        gutter={[8, 8]}
         justify="center"
         //wrap
       >
-        <Col span={6} >
+        <Col xs={24} sm={24} md={6} >
           <div className="image-container">
             <Image
               width={200}
@@ -25,7 +25,7 @@ export default class About extends Component {
           </div>
         </Col>
 
-        <Col span={18}>
+        <Col xs={24} sm={24} md={18}>
           <div className="text-container">
             <AboutTextContent />
           </div>

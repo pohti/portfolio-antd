@@ -1,9 +1,9 @@
 
 .header-row {
     color: var(--main-font-color);
-    /* border-style: solid;
+    border-style: solid;
     border-width: 1px;
-    border-color: green; */
+    border-color: green;
     max-width: var(--max-content-width);
     margin-left: auto;
     margin-right: auto;
@@ -41,4 +41,19 @@
 .ant-menu-title-content > a {
     text-decoration: none;
     color: var(--main-font-color) !important;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .ant-layout-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ant-layout-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
