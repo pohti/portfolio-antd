@@ -12,9 +12,15 @@
   border-color: blue; */
   height: 100%;
   padding: 15px;
-  padding-top: 35px;
+  padding-top: 25px;
   display: flex;
   justify-content: center;
+}
+
+.ant-image {
+  display: flex;
+  justify-content: center;
+  width: 200px;
 }
 
 .text-container {
@@ -44,14 +50,27 @@
   line-height: 30px;
 }
 
+@media only screen and (max-width: 1050px) {
+  .image-container {
+    padding: 5px;
+    padding-top: 30px;
+  }
+
+  .ant-image {
+    width: 170px !important;
+    height: 170px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .image-container {
     padding: 5px;
   }
-  .profile-pic {
-    width: 150px;
+  .ant-image {
+    width: 120px !important;
+    height: 120px;
   }
   .text-container {
-    padding: 5px;
+    padding: 0;
   }
 }

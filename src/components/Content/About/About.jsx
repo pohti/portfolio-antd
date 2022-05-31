@@ -10,14 +10,13 @@ export default class About extends Component {
     return (
       <Row
         className="about-main-div"
-        gutter={[8, 8]}
+        // gutter={[8, 8]}
         justify="center"
         //wrap
       >
         <Col xs={24} sm={24} md={6} >
           <div className="image-container">
             <Image
-              width={200}
               src={imgURL}
               className="profile-pic"
               preview={false}
