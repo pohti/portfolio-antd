@@ -24,14 +24,14 @@
 }
 
 .timeline-title-row {
-  font-size: 25px;
+  font-size: 23px;
   display: flex;
   justify-content: flex-start;
 }
 
 .timeline-title-icon {
   margin-right: 10px;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .education-timeline {

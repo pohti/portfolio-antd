@@ -1,13 +1,14 @@
 @import '~antd/dist/antd.css';
 
 :root {
-  --main-font-color: rgb(217, 139, 84);
+  --main-font-color: rgb(231, 119, 67);
   --main-bg-color: #1e3145;
   --main-border-color: #474a4f7f;
   --main-border-width: 0.1px;
 
+  --max-content-width: 1300px;
+
   --header-padding-top: 18px;
-  --header-selected-color: rgb(217, 139, 84);
   --header-and-footer-min-height: 40px;
 
   --all-padding-horizontal-xl: 10vw;
@@ -58,8 +59,8 @@
   /* min-height: 120px; */
   color: var(--main-font-color);
   padding-top: 12vh;
-  padding-left: var(--all-padding-horizontal-xl);
-  padding-right: var(--all-padding-horizontal-xl);
+  /* padding-left: var(--all-padding-horizontal-xl);
+  padding-right: var(--all-padding-horizontal-xl); */
   line-height: 80px;
   background: var(--main-bg-color);
   flex: 1 1 auto;
@@ -68,6 +69,15 @@
   font-size: var(--global-general-font-size);
 }
 
+.main-content-div {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: red; */
+
+  max-width: var(--max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media only screen and (max-width: 900px) {
   :root {

@@ -21,16 +21,16 @@ function App() {
         <CustomHeader />
       </Header>
 
-      <Content
-      //style={{ height: contentHeight }}
-      >
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="about" element={<About />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="work" element={<Work />} />
-          <Route path="education" element={<Education />} />
-        </Routes>
+      <Content>
+        <div className="main-content-div">
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="about" element={<About />} />
+            <Route path="skills" element={<Skills />} />
+            <Route path="work" element={<Work />} />
+            <Route path="education" element={<Education />} />
+          </Routes>
+        </div>
       </Content>
 
       <Footer>

@@ -20,7 +20,7 @@ export default class CustomHeader extends Component {
         selectedMenuKeys: []
     }
 
-    handleMenuItemClick = ({key}) => {
+    handleMenuItemClick = ({ key }) => {
         // console.log("Menu item clicked", key)
         this.setState({ selectedMenuKeys: [key] })
     }
@@ -29,39 +29,37 @@ export default class CustomHeader extends Component {
         this.setState({ selectedMenuKeys: ['about'] })
     }
 
-    componentDidMount () {
+    componentDidMount() {
         const path = extractPath()
         this.setState({ selectedMenuKeys: [path] })
     }
 
     render() {
         return (
-            <div>
-                <Row className="header-row">
-                    {/* Icon and Username */}
-                    <Col span={8}>
-                        <Row gutter={16} className="header-icon-container">
-                            <Col>
-                                <Link to="/" onClick={this.resetMenuHighlight}><HomeOutlined className="header-icon" /></Link>
-                            </Col>
-                            <Col>
-                                <Link to="/" onClick={this.resetMenuHighlight}><Text className="header-icon-text">Min</Text></Link>
-                            </Col>
-                        </Row>
-                    </Col>
+            <Row className="header-row">
+                {/* Icon and Username */}
+                <Col span={8}>
+                    <Row gutter={16} className="header-icon-container">
+                        <Col>
+                            <Link to="/" onClick={this.resetMenuHighlight}><HomeOutlined className="header-icon" /></Link>
+                        </Col>
+                        <Col>
+                            <Link to="/" onClick={this.resetMenuHighlight}><Text className="header-icon-text">Min</Text></Link>
+                        </Col>
+                    </Row>
+                </Col>
 
-                    {/* Header Menu */}
-                    <Col span={16}>
-                        <Menu
-                            mode="horizontal"
-                            className="header-menu"
-                            items={menuItems}
-                            onClick={this.handleMenuItemClick}
-                            selectedKeys={this.state.selectedMenuKeys}
-                        />
-                    </Col>
-                </Row>
-            </div>
+                {/* Header Menu */}
+                <Col span={16}>
+                    <Menu
+                        mode="horizontal"
+                        className="header-menu"
+                        items={menuItems}
+                        onClick={this.handleMenuItemClick}
+                        selectedKeys={this.state.selectedMenuKeys}
+                    />
+                </Col>
+            </Row>
         )
     }
 }
