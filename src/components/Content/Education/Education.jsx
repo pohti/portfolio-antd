@@ -4,6 +4,10 @@ import {
   ReadOutlined,
   TrophyOutlined
 } from '@ant-design/icons'
+import {
+  education_data,
+  certificate_data
+} from './data'
 import './Education.css'
 
 const { Item } = Timeline
@@ -20,21 +24,7 @@ export default class Education extends Component {
             <b>Education</b>
           </div>
           <Timeline className="education-timeline">
-            <Item>
-              <TimelineContent
-                label="Apr 2017 - Sep 2020"
-                title="Bachelor of Computing, Information Technology"
-                subtitle="University of Wollongong (SIM)"
-              />
-            </Item>
-            <Item>
-              <TimelineContent
-                label="Apr 2012 - Mar 2015"
-                title="Diploma in Electrical and Electronic Engineering"
-                subtitle="Singapore Polytechnic"
-              />
-            </Item>
-            {/* <Item dot={<div/>}></Item> */}
+            <TimelineContentList data={education_data}/>
           </Timeline>
         </div>
 
@@ -47,24 +37,26 @@ export default class Education extends Component {
             <b>Certificates</b>
           </div>
           <Timeline className="education-timeline">
-            <Item>
-              <TimelineContent
-                label="Nov 2021"
-                title="AWS Certified: Solutions Architect - Associate"
-              />
-            </Item>
-            <Item>
-              <TimelineContent
-                label="Feb 2021"
-                title="Microsoft Certified: Azure Fundamentals"
-              />
-            </Item>
+            <TimelineContentList data={certificate_data}/>
           </Timeline>
         </div>
       </div>
     )
   }
 }
+
+const TimelineContentList = ({ data }) => {
+  return data.map(({ date, title, subtitle }) => (
+    <Item>
+      <TimelineContent
+        label={date}
+        title={title}
+        subtitle={subtitle}
+      />
+    </Item>
+  ))
+}
+
 
 const TimelineContent = ({ label, title, subtitle }) => {
   return (

@@ -19,7 +19,7 @@ export default class Skills extends Component {
   render() {
     return (
       <div className="main-skills-div">
-        <Tabs defaultActiveKey='others'>
+        <Tabs defaultActiveKey='frontend'>
           <TabPane
             tab={<TabTitle icon={<BgColorsOutlined />} title="Front-end" />}
             key="frontend"
@@ -87,19 +87,6 @@ const OtherSkills = ({ data }) => {
   const IconList = data.map(({ skill_name, icon_url }) => {
     return (
       <Col span={6} className="other-skills-individual-container" key={skill_name}>
-        {/* <Row gutter={[4, 4]}>
-          <Col span={24}>
-            <Image
-              src={icon_url}
-              preview={false}
-              className="other-skills-icon"
-            />
-          </Col>
-          <Col style={{ fontSize: "15px" }} span={24}>
-            <span>{skill_name}</span>
-          </Col>
-        </Row> */}
-
         <div className="other-skills-icon-container">
           <Image
             src={icon_url}
