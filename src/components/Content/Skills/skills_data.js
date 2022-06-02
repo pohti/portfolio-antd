@@ -63,21 +63,6 @@ export const back_end_skills = [
     icon: null,
     rating: 65,
   },
-  // {
-  //   skill_name: 'AWS Lambda',
-  //   icon: null,
-  //   rating: 85,
-  // },
-  // {
-  //   skill_name: 'AWS API Gateway',
-  //   icon: null,
-  //   rating: 85,
-  // },
-  // {
-  //   skill_name: 'AWS S3',
-  //   icon: null,
-  //   rating: 85,
-  // },
 ]
 
 export const other_skills = [

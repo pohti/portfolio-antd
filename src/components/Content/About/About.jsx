@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Row, Col, Image } from 'antd'
-import AboutTextContent from './AboutTextContent'
 import './About.css'
 
 const imgURL = "https://media-exp1.licdn.com/dms/image/C5103AQFr27-SuBeXeg/profile-displayphoto-shrink_800_800/0/1517233913057?e=1659571200&v=beta&t=yUtgQb-nB9mtlAXV4V5wwMyExlthxRNPXJquTA9ahYc"
@@ -33,3 +32,26 @@ export default class About extends Component {
     )
   }
 }
+
+const AboutTextContent = () => (
+  <div>
+    <div className="about-text-content-title">
+      <span>Hello World!  <span style={{ marginLeft: "5px" }} >I am Min</span> </span>
+    </div>
+
+    <div className="about-text-content-description">
+      <div>
+        <span>
+          I'm a Software Engineer in Lucence - a company that is revolutionising cancer care
+          by building sensitive blood-testing technologies that profile cancer both accurately and affordably.
+        </span>
+      </div>
+      <div style={{ marginTop: "25px" }}>
+        <span >
+          Gradudated in 2020 from University of Wollongong - Bachelor of Information Technology, I have 2 years of experience working width
+          React, Python, DynamoDB and other AWS Services.
+        </span>
+      </div>
+    </div>
+  </div>
+)

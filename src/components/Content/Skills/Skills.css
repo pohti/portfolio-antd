@@ -17,7 +17,7 @@
 }
 
 .ant-tabs-tab-btn {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* tab header bar */
@@ -36,12 +36,6 @@
 
 .other-skills-main-div {
   margin-top: 10px;
-}
-
-.other-skills-individual-container {
-  /* border-style: solid;
-  border-width: 1px;
-  border-color: green; */
 }
 
 .other-skills-label {
