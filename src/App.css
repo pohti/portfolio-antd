@@ -53,7 +53,6 @@
 .ant-layout-content {
   /* min-height: 120px; */
   color: var(--main-font-color);
-  line-height: 80px;
   background: var(--main-bg-color);
   flex: 1 1 auto;
   height: 100%;
@@ -76,8 +75,24 @@
   padding-bottom: 50px;
 }
 
-/* @media only screen and (max-width: 900px) {
-} */
+@media only screen and (max-height: 900px) {
+  .main-content-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main-content-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
 
