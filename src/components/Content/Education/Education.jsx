@@ -47,7 +47,7 @@ export default class Education extends Component {
 
 const TimelineContentList = ({ data }) => {
   return data.map(({ date, title, subtitle }) => (
-    <Item>
+    <Item key={title}>
       <TimelineContent
         label={date}
         title={title}

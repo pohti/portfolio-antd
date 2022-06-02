@@ -86,7 +86,11 @@ const OtherSkills = ({ data }) => {
 
   const IconList = data.map(({ skill_name, icon_url }) => {
     return (
-      <Col span={6} className="other-skills-individual-container" key={skill_name}>
+      <Col 
+        xs={12} sm={8} md={8} lg={6}
+        className="other-skills-individual-container" 
+        key={skill_name}
+      >
         <div className="other-skills-icon-container">
           <Image
             src={icon_url}
@@ -102,7 +106,7 @@ const OtherSkills = ({ data }) => {
   })
 
   return (
-    <Row gutter={[4, 16]} className="other-skills-main-div">
+    <Row gutter={[8, 16]} className="other-skills-main-div">
       {data && IconList}
     </Row>
   )

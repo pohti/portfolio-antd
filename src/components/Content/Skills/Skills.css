@@ -38,7 +38,11 @@
   margin-top: 10px;
 }
 
-
+.other-skills-individual-container {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: green; */
+}
 
 .other-skills-label {
   margin-top: 5px;
@@ -53,7 +57,11 @@
 
 .other-skills-icon {
   width: 50px;
-  /* border-style: solid;
-  border-width: 1px;
-  border-color: red; */
 }
+
+@media only screen and (max-width: 768px) {
+  .other-skills-label {
+    font-size: 15px !important ;
+  }
+}
+
