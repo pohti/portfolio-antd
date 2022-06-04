@@ -26,12 +26,6 @@
     font-size: 18px;
 }
 
-/* .header-menu-container {
-    border-style: solid;
-    border-width: 1px;
-    border-color: green;
-} */
-
 .header-menu {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
@@ -50,6 +44,11 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--header-selected-color);
+}
+
+/* header menu overflow icon */
+.ant-menu-light .ant-menu-item:hover, .ant-menu-light .ant-menu-item-active, .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-light .ant-menu-submenu-active, .ant-menu-light .ant-menu-submenu-title:hover {
+    color: var(--main-font-selected-color);
 }
 
 .ant-menu-title-content > a {

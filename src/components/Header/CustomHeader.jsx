@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Typography, Menu } from 'antd'
-import { HomeOutlined } from '@ant-design/icons'
+import { HomeOutlined, MenuOutlined } from '@ant-design/icons'
 
 import './CustomHeader.css'
 
@@ -62,6 +62,7 @@ export default class CustomHeader extends Component {
                         items={menuItems}
                         onClick={this.handleMenuItemClick}
                         selectedKeys={this.state.selectedMenuKeys}
+                        overflowedIndicator={<MenuOutlined />}
                     />
                 </Col>
             </Row>

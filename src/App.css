@@ -2,12 +2,14 @@
 
 :root {
   --main-font-color: rgb(231, 119, 67);
+  --main-font-selected-color: #fff;
   --main-bg-color: #1e3145;
   --main-border-color: #474a4f7f;
   --main-border-width: 0.1px;
   --max-content-width: 1300px;
   --header-padding-top: 18px;
   --header-and-footer-min-height: 40px;
+
   --global-general-font-size: 18px;
 }
 
