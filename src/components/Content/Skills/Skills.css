@@ -27,7 +27,7 @@
 
 /* active tab button */
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #fff;
+  color: var(--main-font-selected-color);
 }
 
 .ant-tabs-content-holder {
