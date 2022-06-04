@@ -9,13 +9,13 @@ div.footer-row {
 }
 
 div.footer-row > div.ant-col {
-  border-style: solid;
+  /* border-style: solid;
   border-width: 1px;
-  border-color: red;
+  border-color: red; */
 
-    font-size: var(--global-general-font-size);
-    display: flex;
-    justify-content: center;
+  font-size: var(--global-general-font-size);
+  display: flex;
+  justify-content: center;
 }
 
 a {

@@ -8,7 +8,7 @@ import './CustomHeader.css'
 const { Text } = Typography
 
 const menuItems = [
-    // { label: <Link to="/about">About</Link>, key: 'about' },
+    { label: <Link to="/about">About</Link>, key: 'about' },
     { label: <Link to="/skills">Skills</Link>, key: 'skills' },
     { label: <Link to="/work">Work</Link>, key: 'work' },
     { label: <Link to="/education">Education</Link>, key: 'education' },
@@ -50,7 +50,12 @@ export default class CustomHeader extends Component {
                 </Col>
 
                 {/* Header Menu */}
-                <Col span={16}>
+                <Col 
+                    xs={{ span: 4, offset: 12 }}
+                    sm={{ span: 4, offset: 12 }}
+                    md={{ span: 12, offset: 4 }}
+                    className="header-menu-container"
+                >
                     <Menu
                         mode="horizontal"
                         className="header-menu"
