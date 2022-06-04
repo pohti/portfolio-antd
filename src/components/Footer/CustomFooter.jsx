@@ -41,7 +41,7 @@ export default class CustomFooter extends Component {
             content={"+65 8815 6448"}
             title={null}
           >
-            <PhoneOutlined />
+            <PhoneOutlined className="contact-popover-icon"/>
           </Popover>
         </Col>
         <Col span={2} xs={4}>
@@ -49,7 +49,7 @@ export default class CustomFooter extends Component {
             content={"minmarnoo@gmail.com"}
             title={null}
           >
-            <MailOutlined />
+            <MailOutlined className="contact-popover-icon"/>
           </Popover>
         </Col>
       </Row>

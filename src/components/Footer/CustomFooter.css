@@ -9,6 +9,10 @@ div.footer-row {
 }
 
 div.footer-row > div.ant-col {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+
     font-size: var(--global-general-font-size);
     display: flex;
     justify-content: center;
@@ -17,4 +21,9 @@ div.footer-row > div.ant-col {
 a {
     text-decoration: none;
     color: var(--main-font-color)
+}
+
+/* phone and mail icon */
+.contact-popover-icon > svg {
+  margin-top: 4px;
 }
