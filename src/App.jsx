@@ -8,7 +8,6 @@ import About from './components/Content/About/About'
 import Skills from './components/Content/Skills/Skills'
 import Work from './components/Content/Work/Work'
 import Education from './components/Content/Education/Education'
-import Resume from './components/Content/Resume/Resume';
 
 const { Header, Footer, Content } = Layout;
 
@@ -30,7 +29,7 @@ function App() {
             <Route path="skills" element={<Skills />} />
             <Route path="work" element={<Work />} />
             <Route path="education" element={<Education />} />
-            <Route path="resume" element={<Resume />} />
+            <Route path="resume.pdf" />
           </Routes>
         </div>
       </Content>

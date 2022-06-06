@@ -55,13 +55,13 @@ const AboutTextContent = () => (
       </div>
       <div style={{ marginTop: "25px" }}>
         <button className="resume-button">
-          {/* <a
+          <a
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/1-CsLbKv0rgKpFVH5TdIXYKfWWiPOunm8/view?usp=sharing">
+            href="/resume.pdf">
               Check out my resume!
-          </a> */}
-          <Link to="/resume">Check out my resume!</Link>
+          </a>
+          {/* <Link to="/resume.pdf">Check out my resume!</Link> */}
         </button>
       </div>
     </div>
