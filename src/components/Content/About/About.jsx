@@ -54,14 +54,12 @@ const AboutTextContent = () => (
         </span>
       </div>
       <div style={{ marginTop: "25px" }}>
-        <button className="resume-button">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="/resume.pdf">
-              Check out my resume!
-          </a>
-          {/* <Link to="/resume.pdf">Check out my resume!</Link> */}
+        <button className="resume-button"
+          onClick={() => {
+            window.open("/resume.pdf")
+          }}
+        >
+          Check out my resume!
         </button>
       </div>
     </div>

@@ -58,7 +58,9 @@
   border-radius: 5px;
 
   padding: 10px 15px;
+  cursor: pointer;
 }
+
 .resume-button > a:hover {
   color: #fff;
 }
