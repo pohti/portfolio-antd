@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Row, Col, Image, Button } from 'antd'
+import { Link } from 'react-router-dom'
+import { Row, Col, Image } from 'antd'
 import './About.css'
 
 const imgURL = "https://media-exp1.licdn.com/dms/image/C5103AQFr27-SuBeXeg/profile-displayphoto-shrink_800_800/0/1517233913057?e=1659571200&v=beta&t=yUtgQb-nB9mtlAXV4V5wwMyExlthxRNPXJquTA9ahYc"
@@ -54,12 +55,13 @@ const AboutTextContent = () => (
       </div>
       <div style={{ marginTop: "25px" }}>
         <button className="resume-button">
-          <a
+          {/* <a
             target="_blank"
             rel="noreferrer"
             href="https://drive.google.com/file/d/1-CsLbKv0rgKpFVH5TdIXYKfWWiPOunm8/view?usp=sharing">
               Check out my resume!
-          </a>
+          </a> */}
+          <Link to="/resume">Check out my resume!</Link>
         </button>
       </div>
     </div>
