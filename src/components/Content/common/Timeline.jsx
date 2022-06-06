@@ -1,17 +1,19 @@
 import React from 'react'
 import { Timeline } from 'antd'
 
+import './Timeline.css'
+
 const { Item } = Timeline
 
 export const CustomTimeline = ({ title, icon, data }) => (
-  <div className="education-timeline-div">
+  <div className="timeline-main-div">
     <div className="timeline-title-row">
       <div className="timeline-title-icon">
         {icon}
       </div>
       <b>{title}</b>
     </div>
-    <Timeline className="education-timeline">
+    <Timeline className="timeline-component">
       <TimelineContentList data={data} />
     </Timeline>
   </div>

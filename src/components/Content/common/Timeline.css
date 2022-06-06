@@ -1,0 +1,142 @@
+.timeline-main-div {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: red; */
+
+  /* padding-top: 10px; */
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10px;
+
+  height: 100%;
+  line-height: 27px;
+  max-width: 1000px;
+  margin-bottom: 10px;
+}
+
+.timeline-title-row {
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.timeline-title-icon {
+  margin-right: 10px;
+  font-size: 19px;
+}
+
+.timeline-component {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: blue; */
+
+  padding: 20px;
+  padding-bottom: 0;
+  color: var(--main-font-color);
+  width: 600px;
+}
+
+.timeline-label {
+  font-size: 18px;
+}
+
+.ant-timeline-item {
+  padding-bottom: 15px;
+}
+
+.timeline-item-title {
+  font-size: 20px;
+}
+
+.timeline-item-subtitle {
+  font-size: 17px;
+}
+
+@media only screen and (max-height: 800px) {
+  .timeline-title-row {
+    font-size: 20px;
+  }
+
+  .timeline-label {
+    font-size: 16px;
+  }
+
+  .timeline-item-title {
+    font-size: 18px;
+  }
+
+  .timeline-item-subtitle {
+    font-size: 15px;
+  }
+
+  .timeline-component {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .timeline-main-div,
+  .certificate-timeline-div {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .timeline-title-row {
+    font-size: 20px;
+  }
+
+  .timeline-label {
+    font-size: 16px;
+  }
+
+  .timeline-item-title {
+    font-size: 18px;
+  }
+
+  .timeline-item-subtitle {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .timeline-main-div,
+  .certificate-timeline-div {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+
+
+  .timeline-component {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .timeline-title-row {
+    font-size: 20px;
+  }
+
+  .timeline-label {
+    font-size: 16px;
+  }
+
+  .timeline-item-title {
+    font-size: 18px;
+  }
+
+  .timeline-item-subtitle {
+    font-size: 15px;
+  }
+
+  .timeline-main-div {
+    padding-left: 3vw;
+    padding-right: 1vw;
+  }
+
+  .timeline-component {
+    width: auto;
+  }
+}
