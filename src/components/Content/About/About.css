@@ -50,6 +50,19 @@
   line-height: 30px;
 }
 
+.resume-button {
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--main-font-color);
+  border-width: 1px;
+  border-radius: 5px;
+
+  padding: 10px 15px;
+}
+.resume-button > a:hover {
+  color: #fff;
+}
+
 @media only screen and (max-width: 1050px) {
   .image-container {
     padding: 5px;
