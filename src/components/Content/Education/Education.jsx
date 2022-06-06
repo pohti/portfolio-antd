@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Timeline } from 'antd'
 import {
   ReadOutlined,
   TrophyOutlined
@@ -9,67 +8,16 @@ import {
   certificate_data
 } from './data'
 import './Education.css'
-
-const { Item } = Timeline
+import { CustomTimeline } from '../common/Timeline'
 
 export default class Education extends Component {
   render() {
     return (
       <div className="education-main-div">
-        <div className="education-timeline-div">
-          <div className="timeline-title-row">
-            <div className="timeline-title-icon">
-              <ReadOutlined />
-            </div>
-            <b>Education</b>
-          </div>
-          <Timeline className="education-timeline">
-            <TimelineContentList data={education_data}/>
-          </Timeline>
-        </div>
+        <CustomTimeline title="Education" icon={<ReadOutlined />} data={education_data}/>
 
-
-        <div className="certificate-timeline-div">
-          <div className="timeline-title-row">
-            <div className="timeline-title-icon">
-              <TrophyOutlined />
-            </div>
-            <b>Certificates</b>
-          </div>
-          <Timeline className="education-timeline">
-            <TimelineContentList data={certificate_data}/>
-          </Timeline>
-        </div>
+        <CustomTimeline title="Certificates" icon={<TrophyOutlined />} data={certificate_data}/>
       </div>
     )
   }
-}
-
-const TimelineContentList = ({ data }) => {
-  return data.map(({ date, title, subtitle }) => (
-    <Item key={title}>
-      <TimelineContent
-        label={date}
-        title={title}
-        subtitle={subtitle}
-      />
-    </Item>
-  ))
-}
-
-
-const TimelineContent = ({ label, title, subtitle }) => {
-  return (
-    <div className="timeline-content">
-      <div className="timeline-label">
-        <span>{label}</span>
-      </div>
-      <div className="timeline-item-title">
-        <b>{title}</b>
-      </div>
-      <div className="timeline-item-subtitle">
-        <span>{subtitle}</span>
-      </div>
-    </div>
-  )
 }
