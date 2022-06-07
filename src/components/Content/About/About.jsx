@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Row, Col, Image } from 'antd'
+import Resume from '../Resume/resume.pdf'
 import './About.css'
 
 const imgURL = "https://media-exp1.licdn.com/dms/image/C5103AQFr27-SuBeXeg/profile-displayphoto-shrink_800_800/0/1517233913057?e=1659571200&v=beta&t=yUtgQb-nB9mtlAXV4V5wwMyExlthxRNPXJquTA9ahYc"
@@ -64,13 +65,19 @@ const AboutTextContent = () => (
         </span>
       </div>
       <div style={{ marginTop: "25px" }}>
-        <button className="resume-button"
+        {/* <button className="resume-button"
           onClick={() => {
             window.open("/resume.pdf")
           }}
         >
           Check out my resume!
-        </button>
+        </button> */}
+        <a
+          href={Resume}
+          target = "_blank"
+        >
+          Resume
+        </a>
       </div>
     </div>
   </div>
