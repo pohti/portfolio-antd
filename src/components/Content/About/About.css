@@ -56,7 +56,7 @@ a.text-content-ref-links:hover {
 }
 
 .about-text-content-name {
-  font-size: 45px;
+  font-size: 50px;
   color: var(--main-font-color);
   margin-top: 10px;
 }
@@ -83,7 +83,23 @@ a.text-content-ref-links:hover {
   background-color: rgba(199, 88, 36, 0.057);
 }
 
+.resume-link {
+  border-style: solid;
+  border-color: var(--main-font-color);
+  border-width: 1px;
+  border-radius: 10px;
+
+  padding: 15px 15px
+}
+.resume-link:hover {
+  color: var(--main-font-selected-color);
+  background-color: rgba(199, 88, 36, 0.057);
+}
+
 @media only screen and (max-width: 1050px) {
+  .about-text-content-name  {
+    font-size: 35px
+  }
   .image-container {
     padding: 5px;
     padding-top: 30px;
@@ -96,6 +112,10 @@ a.text-content-ref-links:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .about-text-content-name  {
+    font-size: 35px
+  }
+  
   .image-container {
     padding: 5px;
   }

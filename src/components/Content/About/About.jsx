@@ -71,20 +71,21 @@ const AboutTextContent = () => (
           React, Python, DynamoDB and other AWS Services.
         </span>
       </div>
-      <div style={{ marginTop: "25px" }}>
-        <button className="resume-button"
+      <div style={{ marginTop: "35px" }}>
+        {/* <button className="resume-button"
           onClick={() => {
             window.open("/resume.pdf")
           }}
         >
           Check out my resume!
-        </button>
-        {/* <a
-          href={Resume}
+        </button> */}
+        <a
+          href="/resume.pdf"
           target = "_blank"
+          className="resume-link"
         >
           Resume
-        </a> */}
+        </a>
       </div>
     </div>
   </div>

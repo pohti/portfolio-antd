@@ -12,11 +12,10 @@ const menuItems = [
     { label: <Link to="/skills">Skills</Link>, key: 'skills' },
     { label: <Link to="/work">Work</Link>, key: 'work' },
     { label: <Link to="/education">Education</Link>, key: 'education' },
-    { label: <Link to="/resume">Resume</Link>, key: 'resume' },
+    // { label: <Link to="/resume">Resume</Link>, key: 'resume' },
 ]
 
 export default class CustomHeader extends Component {
-
     state = {
         selectedMenuKeys: []
     }

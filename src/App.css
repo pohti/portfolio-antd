@@ -14,6 +14,9 @@
   --global-general-font-size: 18px;
 }
 
+::selection {
+  background: rgba(213, 164, 99, 0.174);
+}
 
 a:hover {
   text-decoration: none;
