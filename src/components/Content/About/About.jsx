@@ -37,14 +37,24 @@ export default class About extends Component {
 const AboutTextContent = () => (
   <div>
     <div className="about-text-content-title">
-      <span>Hello World!  <span style={{ marginLeft: "5px" }} >I am Min</span> </span>
+      <span>Hi, my name is</span>
+    </div>
+    <div className="about-text-content-name">
+      <span>Min Marn Oo</span>
     </div>
 
     <div className="about-text-content-description">
       <div>
         <span>
-          I'm a Software Engineer in Lucence - a company that is revolutionising cancer care
-          by building sensitive blood-testing technologies that profile cancer both accurately and affordably.
+          I'm a Software Engineer specializing in building (and occasionally designing) web applications.
+          Currently, I am focused on building clean and efficient UIs at {" "}
+          <a
+              target="_blank" 
+              href="https://www.lucence.com/"
+              rel="noreferrer"
+              style={{ color: "rgb(212, 204, 202)" }}
+          >
+          Lucence</a>.
         </span>
       </div>
       <div style={{ marginTop: "25px" }}>

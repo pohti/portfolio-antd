@@ -2,7 +2,8 @@
 
 :root {
   --main-font-color: rgb(231, 119, 67);
-  --main-font-selected-color: #fff;
+  --secondary-font-color: rgb(212, 204, 202);
+  --main-font-selected-color: rgb(212, 204, 202);
   --main-bg-color: #1e3145;
   --main-border-color: #474a4f7f;
   --main-border-width: 0.1px;
@@ -11,6 +12,14 @@
   --header-and-footer-min-height: 40px;
 
   --global-general-font-size: 18px;
+}
+
+a {
+  color: var(--secondary-font-color);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .ant-layout {
