@@ -35,6 +35,14 @@
   padding-top: 30px;
 }
 
+a.text-content-ref-links {
+  color: rgb(212, 204, 202)
+}
+a.text-content-ref-links:hover {
+  color:rgb(212, 204, 202)
+}
+
+
 .profile-pic {
   border-radius: 50%;
   /* border-style: solid;

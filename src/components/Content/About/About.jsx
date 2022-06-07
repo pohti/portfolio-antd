@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
 import { Row, Col, Image } from 'antd'
-import Resume from '../Resume/resume.pdf'
 import './About.css'
 
 const imgURL = "https://media-exp1.licdn.com/dms/image/C5103AQFr27-SuBeXeg/profile-displayphoto-shrink_800_800/0/1517233913057?e=1659571200&v=beta&t=yUtgQb-nB9mtlAXV4V5wwMyExlthxRNPXJquTA9ahYc"
@@ -50,34 +48,43 @@ const AboutTextContent = () => (
           I'm a Software Engineer specializing in building (and occasionally designing) web applications.
           Currently, I am focused on building clean and efficient UIs at {" "}
           <a
-              target="_blank" 
-              href="https://www.lucence.com/"
-              rel="noreferrer"
-              style={{ color: "rgb(212, 204, 202)" }}
+            target="_blank"
+            href="https://www.lucence.com/"
+            rel="noreferrer"
+            className="text-content-ref-links"
           >
-          Lucence</a>.
+            Lucence</a>.
         </span>
       </div>
       <div style={{ marginTop: "25px" }}>
         <span >
-          Gradudated in 2020 from University of Wollongong - Bachelor of Information Technology, I have 2 years of experience working width
+          Gradudated in 2020 from {" "}
+          <a
+            href="https://www.uow.edu.au/"
+            rel="noreferrer"
+            target="_blank"
+            className="text-content-ref-links"
+          >
+            University of Wollongong
+          </a> {" "}
+          - Bachelor of Information Technology, I have 2 years of experience working width
           React, Python, DynamoDB and other AWS Services.
         </span>
       </div>
       <div style={{ marginTop: "25px" }}>
-        {/* <button className="resume-button"
+        <button className="resume-button"
           onClick={() => {
             window.open("/resume.pdf")
           }}
         >
           Check out my resume!
-        </button> */}
-        <a
+        </button>
+        {/* <a
           href={Resume}
           target = "_blank"
         >
           Resume
-        </a>
+        </a> */}
       </div>
     </div>
   </div>

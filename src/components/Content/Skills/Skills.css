@@ -16,6 +16,10 @@
   color: var(--main-font-color)
 }
 
+.ant-tabs-tab:hover {
+  color: var(--main-font-selected-color);
+}
+
 .ant-tabs-tab-btn {
   font-size: 16px;
 }
