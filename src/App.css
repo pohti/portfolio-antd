@@ -14,12 +14,9 @@
   --global-general-font-size: 18px;
 }
 
-a {
-  color: var(--secondary-font-color);
-}
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .ant-layout {

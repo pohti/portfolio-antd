@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { Row, Col, Popover, Tooltip } from 'antd'
+import { Row, Col, Popover, Tooltip, message } from 'antd'
 import {
   LinkedinOutlined,
   GithubOutlined,
   PhoneOutlined,
-  MailOutlined
+  MailOutlined,
+  CopyOutlined
 } from '@ant-design/icons'
 import './CustomFooter.css'
 
@@ -38,15 +39,26 @@ export default class CustomFooter extends Component {
         </Col>
         <Col span={2} xs={4}>
           <Popover
-            content={"+65 8815 6448"}
+            content={(
+              <div>
+                <span>+65 8815 6448</span> {" "}
+                <CopyTextButton text="+65 8815 6448"/>
+              </div>
+            )}
             title={null}
           >
             <PhoneOutlined className="contact-popover-icon"/>
+            
           </Popover>
         </Col>
         <Col span={2} xs={4}>
           <Popover
-            content={"minmarnoo@gmail.com"}
+            content={(
+              <div>
+                <span>minmarnoo@gmail.com</span> {" "}
+                <CopyTextButton text="minmarnoo@gmail.com"/>
+              </div>
+            )}
             title={null}
           >
             <MailOutlined className="contact-popover-icon"/>
@@ -55,4 +67,18 @@ export default class CustomFooter extends Component {
       </Row>
     )
   }
+}
+
+const CopyTextButton = ({text}) => {
+  const copyTextToClipBoard = () => {
+    navigator.clipboard.writeText(text)
+    message.success("Copied to clipboard!")
+  }
+  return (
+    <button onClick={copyTextToClipBoard}
+      className="copy-button"
+    >
+      <CopyOutlined />
+    </button>
+  )
 }

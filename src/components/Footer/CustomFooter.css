@@ -27,3 +27,25 @@ a {
 .contact-popover-icon > svg {
   margin-top: 4px;
 }
+
+.contact-popover-icon {
+  cursor: pointer;
+}
+
+.copy-button {
+  font-size: 19px;
+  cursor: pointer;
+  padding: 5px 8px;
+  margin-left: 8px;
+  background-color: rgb(244, 244, 244);
+
+  border-radius: 5px;
+  border-color: rgba(164, 161, 161, 0.209);
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.copy-button:hover {
+  color: rgb(0, 136, 255);
+  border-color: rgba(0, 136, 255, 0.402);
+}

@@ -26,6 +26,11 @@
     font-size: 18px;
 }
 
+/* a:hover {
+    text-decoration: none;
+} */
+
+
 .header-menu {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
