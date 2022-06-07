@@ -11,7 +11,7 @@ const menuItems = [
     { label: <Link to="/about">About</Link>, key: 'about' },
     { label: <Link to="/skills">Skills</Link>, key: 'skills' },
     { label: <Link to="/work">Work</Link>, key: 'work' },
-    { label: <Link to="/education">Education</Link>, key: 'education' },
+    { label: <Link to="/education">Education</Link>, key: 'education' }
     // { label: <Link to="/resume">Resume</Link>, key: 'resume' },
 ]
 
@@ -50,7 +50,7 @@ export default class CustomHeader extends Component {
                 </Col>
 
                 {/* Header Menu */}
-                <Col 
+                <Col
                     xs={{ span: 4, offset: 12 }}
                     sm={{ span: 4, offset: 12 }}
                     md={{ span: 12, offset: 4 }}
@@ -64,7 +64,17 @@ export default class CustomHeader extends Component {
                         selectedKeys={this.state.selectedMenuKeys}
                         overflowedIndicator={<MenuOutlined />}
                     />
+
                 </Col>
+                {/* <Col span={3}>
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        className="resume-link"
+                    >
+                        Resume
+                    </a>
+                </Col> */}
             </Row>
         )
     }

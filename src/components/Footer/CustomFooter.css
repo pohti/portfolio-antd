@@ -18,9 +18,13 @@ div.footer-row > div.ant-col {
   justify-content: center;
 }
 
-a {
+a{
     text-decoration: none;
     color: var(--main-font-color)
+}
+
+.social-media-link:hover {
+  color: var(--main-font-selected-color)
 }
 
 /* phone and mail icon */
@@ -31,6 +35,11 @@ a {
 .contact-popover-icon {
   cursor: pointer;
 }
+
+.footer-popover-content {
+  color: var(--main-font-color);
+}
+
 
 .copy-button {
   font-size: 19px;

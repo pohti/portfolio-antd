@@ -79,13 +79,13 @@ const AboutTextContent = () => (
         >
           Check out my resume!
         </button> */}
-        <a
+        {/* <a
           href="/resume.pdf"
           target = "_blank"
           className="resume-link"
         >
           Resume
-        </a>
+        </a> */}
       </div>
     </div>
   </div>

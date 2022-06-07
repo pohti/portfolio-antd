@@ -21,6 +21,7 @@ export default class CustomFooter extends Component {
               target="_blank" 
               href="https://www.linkedin.com/in/minmarnoo/"
               rel="noreferrer"
+              className="social-media-link"
             >
               <LinkedinOutlined />
             </a>
@@ -32,6 +33,7 @@ export default class CustomFooter extends Component {
               target="_blank" 
               href="https://github.com/pohti?tab=repositories"
               rel="noreferrer"
+              className="social-media-link"
             >
               <GithubOutlined />
             </a>
@@ -40,28 +42,28 @@ export default class CustomFooter extends Component {
         <Col span={2} xs={4}>
           <Popover
             content={(
-              <div>
+              <div className="footer-popover-content">
                 <span>+65 8815 6448</span> {" "}
                 <CopyTextButton text="+65 8815 6448"/>
               </div>
             )}
             title={null}
           >
-            <PhoneOutlined className="contact-popover-icon"/>
+            <PhoneOutlined className="contact-popover-icon social-media-link"/>
             
           </Popover>
         </Col>
         <Col span={2} xs={4}>
           <Popover
             content={(
-              <div>
+              <div className="footer-popover-content">
                 <span>minmarnoo@gmail.com</span> {" "}
                 <CopyTextButton text="minmarnoo@gmail.com"/>
               </div>
             )}
             title={null}
           >
-            <MailOutlined className="contact-popover-icon"/>
+            <MailOutlined className="contact-popover-icon social-media-link"/>
           </Popover>
         </Col>
       </Row>

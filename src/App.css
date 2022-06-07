@@ -16,6 +16,7 @@
 
 ::selection {
   background: rgba(213, 164, 99, 0.174);
+  color: var(--main-font-color);
 }
 
 a:hover {
