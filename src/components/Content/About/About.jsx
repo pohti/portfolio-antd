@@ -53,7 +53,7 @@ const AboutTextContent = () => (
           >
             University of Wollongong
         </a> {" "}
-        and worked on multiple projects to give me a better understanding of how the 'web' works.
+        and worked on multiple projects to give myself a better understanding of how the 'web' works.
       </p>
       <p>
         I am currently working as a Software Engineer at {" "}

@@ -11,7 +11,6 @@ import './Transitions.css'
 
 function AnimatedRoutes() {
   const location = useLocation()
-  console.log(location)
 
   return (
     <TransitionGroup>
