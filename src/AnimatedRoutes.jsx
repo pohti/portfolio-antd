@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
+import Home from './components/Content/Home/Home'
 import About from './components/Content/About/About'
 import Skills from './components/Content/Skills/Skills'
 import Work from './components/Content/Work/Work'
@@ -20,7 +21,7 @@ function AnimatedRoutes() {
         key={location.key}
       >
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="skills" element={<Skills />} />
           <Route path="work" element={<Work />} />

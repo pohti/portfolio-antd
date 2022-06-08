@@ -26,7 +26,7 @@ export default class CustomHeader extends Component {
     }
 
     resetMenuHighlight = () => {
-        this.setState({ selectedMenuKeys: ['about'] })
+        this.setState({ selectedMenuKeys: [] })
     }
 
     componentDidMount() {
