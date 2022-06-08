@@ -31,16 +31,15 @@
   height: 100%;
   color: var(--main-font-color);
   line-height: 30px;
-  padding: 15px;
-  padding-top: 30px;
+  padding: 0 15px;
 }
 
-a.text-content-ref-links {
+/* a.text-content-ref-links {
   color: rgb(212, 204, 202)
 }
 a.text-content-ref-links:hover {
   color:rgb(212, 204, 202)
-}
+} */
 
 
 .profile-pic {

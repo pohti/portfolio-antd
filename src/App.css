@@ -1,11 +1,21 @@
 @import '~antd/dist/antd.css';
 
 :root {
+  /* theme 1 */
   --main-font-color: rgb(231, 119, 67);
-  --secondary-font-color: rgb(212, 204, 202);
-  --main-font-selected-color: rgb(212, 204, 202);
-  --main-bg-color: #1e3145;
+  --secondary-font-color: #fff; 
+  --main-font-selected-color: #fff; 
+  --main-bg-color: #1e3145; 
   --main-border-color: #474a4f7f;
+ 
+
+  /* theme 2 */
+  /* --main-font-color: rgb(79, 231, 206);
+  --secondary-font-color: #fff;
+  --main-font-selected-color: rgb(229, 226, 233);
+  --main-bg-color: #1e3145;
+  --main-border-color: #474a4f7f; */
+  
   --main-border-width: 0.1px;
   --max-content-width: 1300px;
   --header-padding-top: 18px;

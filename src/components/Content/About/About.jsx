@@ -35,58 +35,57 @@ export default class About extends Component {
 
 const AboutTextContent = () => (
   <div>
-    <div className="about-text-content-title">
-      <span>Hi, my name is</span>
-    </div>
-    <div className="about-text-content-name">
-      <span>Min Marn Oo</span>
-    </div>
-
     <div className="about-text-content-description">
-      <div>
-        <span>
-          I'm a Software Engineer specializing in building (and occasionally designing) web applications.
-          Currently, I am focused on building clean and efficient UIs at {" "}
-          <a
-            target="_blank"
-            href="https://www.lucence.com/"
-            rel="noreferrer"
-            className="text-content-ref-links"
-          >
-            Lucence</a>.
-        </span>
-      </div>
-      <div style={{ marginTop: "25px" }}>
-        <span >
-          Gradudated in 2020 from {" "}
-          <a
+      <p>
+        Hi, my name is Min. I enjoy building and designing web applications. 
+        My interest in programming started back in 2013 when I was learning how to program Arduino circuit boards.
+      </p>
+      <p>
+        Since then, I focused my learning on programming and software development.
+      </p>
+      <p>
+        Fast-forward to today, I have attained a degree in <span style={{ color: "#fff"}}>Bachelor of Information Technology</span> from {" "}
+        <a
             href="https://www.uow.edu.au/"
             rel="noreferrer"
             target="_blank"
             className="text-content-ref-links"
           >
             University of Wollongong
-          </a> {" "}
-          - Bachelor of Information Technology, I have 2 years of experience working width
-          React, Python, DynamoDB and other AWS Services.
-        </span>
-      </div>
-      <div style={{ marginTop: "35px" }}>
-        {/* <button className="resume-button"
+        </a> {" "}
+        and worked on multiple projects to give me a better understanding of how the 'web' works.
+      </p>
+      <p>
+        I am currently working as a Software Engineer at {" "}
+        <a
+            href="https://www.lucence.com/"
+            rel="noreferrer"
+            target="_blank"
+            className="text-content-ref-links"
+          >
+            Lucence
+        </a> {" "} -  a company that focuses on early cancer detection and diagnosis.
+
+      </p>
+
+
+
+      {/* <div style={{ marginTop: "35px" }}>
+        <button className="resume-button"
           onClick={() => {
             window.open("/resume.pdf")
           }}
         >
           Check out my resume!
-        </button> */}
-        {/* <a
+        </button>
+        <a
           href="/resume.pdf"
           target = "_blank"
           className="resume-link"
         >
           Resume
-        </a> */}
-      </div>
+        </a>
+      </div> */}
     </div>
   </div>
 )

@@ -53,6 +53,8 @@ const TabTitle = ({ icon, title }) => (
 )
 
 const SkillList = ({ data }) => {
+  const default_strokeColor = "#cc790c"
+
   const skill_list = data.map(({ skill_name, icon, rating, color }) => (
 
     <Row className="skill-and-progress-div" key={skill_name}>
@@ -68,7 +70,7 @@ const SkillList = ({ data }) => {
           showInfo={false}
           strokeWidth={4}
           strokeLinecap="square"
-          strokeColor={color ? color : "rgb(231, 119, 67)"}
+          strokeColor={color ? color : default_strokeColor}
         />
       </Col>
     </Row>
