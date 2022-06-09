@@ -44,7 +44,9 @@
 .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-open,
 .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item-selected,
 .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-submenu-selected {
-    color: var(--main-font-color);
+    /* color: var(--main-font-color); */
+    /* background-color: rgba(255, 102, 0, 0.099) !important; */
+    color: var(--main-font-color) !important;
 }
 
 .ant-menu-horizontal:not(.ant-menu-dark)>.ant-menu-item:hover::after,

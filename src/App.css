@@ -25,8 +25,8 @@
 }
 
 ::selection {
-  background: rgba(213, 164, 99, 0.174);
-  color: var(--main-font-color);
+  background: rgba(213, 164, 99, 0.174) !important;
+  color: var(--main-font-color) !important;
 }
 
 a:hover {
