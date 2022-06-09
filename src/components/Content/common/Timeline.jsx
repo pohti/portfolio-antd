@@ -20,19 +20,20 @@ export const CustomTimeline = ({ title, icon, data }) => (
 )
 
 export const TimelineContentList = ({ data }) => {
-  return data.map(({ date, title, subtitle }) => (
+  return data.map(({ date, title, subtitle, description }) => (
     <Item key={title}>
       <TimelineContent
         label={date}
         title={title}
         subtitle={subtitle}
+        description={description}
       />
     </Item>
   ))
 }
 
 
-const TimelineContent = ({ label, title, subtitle }) => {
+const TimelineContent = ({ label, title, subtitle, description }) => {
   return (
     <div className="timeline-content">
       <div className="timeline-label">
@@ -43,6 +44,9 @@ const TimelineContent = ({ label, title, subtitle }) => {
       </div>
       <div className="timeline-item-subtitle">
         <span>{subtitle}</span>
+      </div>
+      <div className="timeline-item-description">
+        {description}
       </div>
     </div>
   )

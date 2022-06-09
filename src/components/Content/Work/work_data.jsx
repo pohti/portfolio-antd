@@ -2,8 +2,9 @@
 export const work_data = [
   {
     date: 'Jun 2021 - Current',
-    title: 'Software Engineer | Lucence ',
-    subtitle: (
+    title: 'Software Engineer',
+    subtitle: 'Lucence',
+    description: (
       <ul>
         <li>Develop and maintain frontend applications using React, Mobx and Ant Design.</li>
         <li>Build RESTful APIs (using API Gateway, S3, Lambda, DynamoDB and MySQL) that serves data to the frontend</li>
@@ -15,8 +16,9 @@ export const work_data = [
   },
   {
     date: 'Jan 2019 - Jun 2021',
-    title: 'IT Field Service Technologist | Micron Technology, Inc.',
-    subtitle: (
+    title: 'IT Field Service Technologist',
+    subtitle: 'Micron Technology, Inc.',
+    description: (
       <ul>
         <li>Configure in house software and hardware repairs</li>
         <li>Server preventive maintenance (disk defragmentation, administration of security and service patches)</li>
@@ -27,8 +29,9 @@ export const work_data = [
   },
   {
     date: 'Jun 2015 - Jan 2019',
-    title: 'Technical Specialist | Hewlett Packard Inc. ',
-    subtitle: (
+    title: 'Technical Specialist',
+    subtitle: 'Hewlett Packard Inc.',
+    description: (
       <ul>
         <li>Troubleshoot problems in non functioning equipment.</li>
         <li>Dismantled, adjusted, repaired and assembled equipment according to plans, blueprints, operating or repair manuals, and/or rough sketches or drawings.</li>
