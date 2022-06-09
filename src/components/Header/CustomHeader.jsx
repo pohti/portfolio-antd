@@ -8,11 +8,10 @@ import './CustomHeader.css'
 const { Text } = Typography
 
 const menuItems = [
-    { label: <Link to="/about">About</Link>, key: 'about' },
-    { label: <Link to="/skills">Skills</Link>, key: 'skills' },
-    { label: <Link to="/work">Work</Link>, key: 'work' },
-    { label: <Link to="/education">Education</Link>, key: 'education' }
-    // { label: <Link to="/resume">Resume</Link>, key: 'resume' },
+    { label: 'About', key: 'about' },
+    { label: 'Skills', key: 'skills' },
+    { label: 'Work', key: 'work' },
+    { label: 'Education', key: 'education' }
 ]
 
 export default class CustomHeader extends Component {
@@ -32,6 +31,35 @@ export default class CustomHeader extends Component {
     componentDidMount() {
         const path = extractPath()
         this.setState({ selectedMenuKeys: [path] })
+    }
+
+    handleMenuItemClick = (key) => {
+        this.setState({ selectedMenuKeys: [key] })
+    }
+
+    HeaderMenu = () => {
+
+        const MenuItems = menuItems.map(({ label, key }) => {
+            const isSelected = this.state.selectedMenuKeys.includes(key)
+
+            // console.log(key, isSelected)
+            return (
+                <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="header-menu-item"
+                    style={{
+                        color: isSelected && "#fff",
+                        backgroundColor: isSelected && "rgb(231, 119, 67)"
+                    }}
+                >
+                    {label}
+                </Link >
+            )
+        })
+
+        return (
+            <div className="header-menu-div">
+                {MenuItems}
+            </div>
+        )
     }
 
     render() {
@@ -54,17 +82,8 @@ export default class CustomHeader extends Component {
                     xs={{ span: 4, offset: 12 }}
                     sm={{ span: 4, offset: 12 }}
                     md={{ span: 12, offset: 4 }}
-                    className="header-menu-container"
                 >
-                    <Menu
-                        mode="horizontal"
-                        className="header-menu"
-                        items={menuItems}
-                        onClick={this.handleMenuItemClick}
-                        selectedKeys={this.state.selectedMenuKeys}
-                        overflowedIndicator={<MenuOutlined />}
-                    />
-
+                    <this.HeaderMenu />
                 </Col>
                 {/* <Col span={3}>
                     <a
