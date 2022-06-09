@@ -53,7 +53,7 @@ const TabTitle = ({ icon, title }) => (
 )
 
 const SkillList = ({ data }) => {
-  const default_strokeColor = "#cc790c"
+  const default_strokeColor = "#bf8115"
 
   const skill_list = data.map(({ skill_name, icon, rating, color }) => (
 

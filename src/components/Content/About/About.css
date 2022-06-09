@@ -29,6 +29,7 @@
   border-color: red; */
 
   height: 100%;
+  max-width: 850px;
   color: var(--main-font-color);
   line-height: 30px;
   padding: 0 15px;

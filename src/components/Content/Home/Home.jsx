@@ -11,7 +11,8 @@ export default class Home extends Component {
             <span>Hi, my name is</span>
           </div>
           <div className="home-text-content-name">
-            <span>Min Marn Oo</span>
+            <span>Min Marn Oo.</span> {" "}
+            <span style={{ fontSize: "17px", color: "#fff" }}>I am a..</span>
           </div>
           <div className="home-text-content-subtitle">
             <span>Web Developer, Software Engineer</span>
@@ -19,8 +20,8 @@ export default class Home extends Component {
 
           <div className="home-text-content">
             <p>
-              I'm a software engineer specializing in building (and occasionally designing) web applications.
-              Currently, I am focused on building clean and informative user interfaces at {" "}
+              I specialize in building (and occasionally designing) web applications.
+              Currently, I am focused on creating clean and informative user interfaces at {" "}
               <a
                 target="_blank"
                 href="https://www.lucence.com/"
