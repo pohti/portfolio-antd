@@ -51,6 +51,11 @@
 
 .timeline-item-subtitle {
   font-size: 17px;
+  color: rgb(201, 201, 201);
+}
+
+.timeline-item-description {
+  font-size: 15px;
 }
 
 @media only screen and (max-height: 800px) {
@@ -97,6 +102,10 @@
 
   .timeline-item-subtitle {
     font-size: 15px;
+  }
+
+  .timeline-item-description {
+    font-size: 13.5px;
   }
 }
 
