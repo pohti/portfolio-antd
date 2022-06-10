@@ -94,4 +94,8 @@ export const other_skills = [
     skill_name: 'Heroku',
     icon_url: 'https://manzanit0.gallerycdn.vsassets.io/extensions/manzanit0/heroku-vscode/0.3.0/1590949018168/Microsoft.VisualStudio.Services.Icons.Default',
   },
+  {
+    skill_name: 'Jest',
+    icon_url: 'https://cdn.iconscout.com/icon/free/png-256/jest-3629451-3031514.png',
+  }
 ]
