@@ -22,11 +22,6 @@ export default class CustomHeader extends Component {
         drawerVisible: false,
     }
 
-    handleMenuItemClick = ({ key }) => {
-        // console.log("Menu item clicked", key)
-        this.setState({ selectedMenuKeys: [key] })
-    }
-
     resetMenuHighlight = () => {
         this.setState({ selectedMenuKeys: [] })
     }
