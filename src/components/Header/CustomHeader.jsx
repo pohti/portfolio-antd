@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Typography, Menu } from 'antd'
+import { Row, Col, Typography } from 'antd'
 import { HomeOutlined, MenuOutlined } from '@ant-design/icons'
 
 import './CustomHeader.css'
@@ -16,7 +16,9 @@ const menuItems = [
 
 export default class CustomHeader extends Component {
     state = {
-        selectedMenuKeys: []
+        selectedMenuKeys: [],
+        innerWidth: null,
+        innerHeight: null,
     }
 
     handleMenuItemClick = ({ key }) => {
@@ -29,15 +31,33 @@ export default class CustomHeader extends Component {
     }
 
     componentDidMount() {
+        const currentWidth = window.innerWidth
+        console.log(currentWidth)
         const path = extractPath()
         this.setState({ selectedMenuKeys: [path] })
+
+        this.updateWindowDimensions()
+        window.addEventListener("resize", this.updateWindowDimensions)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateWindowDimensions)
+    }
+
+    updateWindowDimensions = () => {
+        this.setState({
+            innerHeight: window.innerHeight,
+            innerWidth: window.innerWidth
+        })
+
+        console.log(this.state.innerHeight, this.state.innerWidth)
     }
 
     handleMenuItemClick = (key) => {
         this.setState({ selectedMenuKeys: [key] })
     }
 
-    HeaderMenu = () => {
+    BigHeaderMenu = () => {
 
         const MenuItems = menuItems.map(({ label, key }) => {
             const isSelected = this.state.selectedMenuKeys.includes(key)
@@ -47,7 +67,7 @@ export default class CustomHeader extends Component {
                 <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="header-menu-item"
                     style={{
                         color: isSelected && "#fff",
-                        backgroundColor: isSelected && "rgb(231, 119, 67)"
+                        backgroundColor: isSelected && "rgba(231, 119, 67, 0.287)"
                     }}
                 >
                     {label}
@@ -62,7 +82,21 @@ export default class CustomHeader extends Component {
         )
     }
 
+    SmallHeaderMenu = () => {
+        return (
+            <div className="header-menu-div">
+                <div className="small-menu-icon-container">
+                    <MenuOutlined/>
+                </div>
+            </div>
+        )
+    }
+
     render() {
+        const innerWidth = this.state.innerWidth
+        const HeaderMenu = (innerWidth < 900) ? <this.SmallHeaderMenu/> : <this.BigHeaderMenu/>
+
+
         return (
             <Row className="header-row">
                 {/* Icon and Username */}
@@ -78,12 +112,8 @@ export default class CustomHeader extends Component {
                 </Col>
 
                 {/* Header Menu */}
-                <Col
-                    xs={{ span: 4, offset: 12 }}
-                    sm={{ span: 4, offset: 12 }}
-                    md={{ span: 12, offset: 4 }}
-                >
-                    <this.HeaderMenu />
+                <Col span={8} offset={8}>
+                    {HeaderMenu}
                 </Col>
                 {/* <Col span={3}>
                     <a
