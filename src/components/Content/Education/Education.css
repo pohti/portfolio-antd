@@ -9,9 +9,9 @@
   justify-content: center;
 }
 
-.verified-cert-icon {
+/* .verified-cert-icon {
   font-size: 21px;
-}
+} */
 .verified-cert-icon:hover {
   color: #fff
 }

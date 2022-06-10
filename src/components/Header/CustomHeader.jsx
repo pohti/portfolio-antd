@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Typography, Drawer } from 'antd'
-import { HomeOutlined, MenuOutlined } from '@ant-design/icons'
+import { Row, Col, Typography, Drawer, Switch } from 'antd'
+import { HomeOutlined, MenuOutlined, BulbOutlined } from '@ant-design/icons'
 
 import './CustomHeader.css'
 
@@ -157,6 +157,12 @@ export default class CustomHeader extends Component {
 
 
                 <this.DrawerMenu />
+
+
+                <div className="toggle-theme-button-container">
+                    <BulbOutlined /> {" "}
+                    <Switch size="small" defaultChecked/>
+                </div>
 
                 {/* <Col span={3}>
                     <a

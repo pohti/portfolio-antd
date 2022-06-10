@@ -1,5 +1,4 @@
 import { SafetyCertificateOutlined } from '@ant-design/icons'
-import { Tooltip } from 'antd'
 
 export const education_data = [
   {
@@ -17,36 +16,29 @@ export const education_data = [
 export const certificate_data = [
   {
     date: 'Nov 2021',
-    title: (
-      <span>AWS Certified: Solutions Architect - Associate {" "}
-        <Tooltip title="Click to see verified certificate">
-          <a className="verified-cert-icon"
-            href="https://www.credly.com/badges/ae147b5d-4b9e-4d89-b4d0-1c8c62df61ec"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <SafetyCertificateOutlined />
-          </a>
-        </Tooltip>
-      </span>
-    ),
+    title: "AWS Certified: Solutions Architect - Associate",
+    description: (
+      <a className="verified-cert-icon"
+        href="https://www.credly.com/badges/ae147b5d-4b9e-4d89-b4d0-1c8c62df61ec"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Click to see verified certificate <SafetyCertificateOutlined />
+      </a>
+    )
   },
   {
     date: 'Feb 2021',
-    title: (
-      <span>
-        Microsoft Certified: Azure Fundamentals {" "}
-        <Tooltip title="Click to see verified certificate">
-          <a 
-            className="verified-cert-icon"
-            href="https://www.credly.com/badges/043c1163-0a49-445c-bad1-23431b5c7084"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <SafetyCertificateOutlined />
-          </a>
-        </Tooltip>
-      </span>
-    ),
+    title: " Microsoft Certified: Azure Fundamentals",
+    description: (
+      <a
+        className="verified-cert-icon"
+        href="https://www.credly.com/badges/043c1163-0a49-445c-bad1-23431b5c7084"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Click to see verified certificate <SafetyCertificateOutlined />
+      </a>
+    )
   },
 ]
