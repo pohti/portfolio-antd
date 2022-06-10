@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Typography } from 'antd'
+import { Row, Col, Typography, Drawer } from 'antd'
 import { HomeOutlined, MenuOutlined } from '@ant-design/icons'
 
 import './CustomHeader.css'
@@ -19,6 +19,7 @@ export default class CustomHeader extends Component {
         selectedMenuKeys: [],
         innerWidth: null,
         innerHeight: null,
+        drawerVisible: false,
     }
 
     handleMenuItemClick = ({ key }) => {
@@ -49,13 +50,15 @@ export default class CustomHeader extends Component {
             innerHeight: window.innerHeight,
             innerWidth: window.innerWidth
         })
-
-        console.log(this.state.innerHeight, this.state.innerWidth)
+        //console.log(this.state.innerHeight, this.state.innerWidth)
     }
 
     handleMenuItemClick = (key) => {
         this.setState({ selectedMenuKeys: [key] })
     }
+
+    openDrawer = () => { this.setState({ drawerVisible: true }) }
+    closeDrawer = () => { this.setState({ drawerVisible: false }) }
 
     BigHeaderMenu = () => {
 
@@ -85,16 +88,63 @@ export default class CustomHeader extends Component {
     SmallHeaderMenu = () => {
         return (
             <div className="header-menu-div">
-                <div className="small-menu-icon-container">
-                    <MenuOutlined/>
+                <div className="small-menu-icon-container"
+                    onClick={this.openDrawer}
+                >
+                    <MenuOutlined />
                 </div>
             </div>
         )
     }
 
+    DrawerMenu = () => {
+        const bgColor = "#1e3145"
+
+        const MenuItems = menuItems.map(({ label, key }) => {
+            const isSelected = this.state.selectedMenuKeys.includes(key)
+
+            // console.log(key, isSelected)
+            return (
+                <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="drawer-menu-item"
+                    style={{
+                        color: isSelected && "#fff",
+                        backgroundColor: isSelected && "rgba(231, 119, 67, 0.287)"
+                    }}
+                >
+                    {label}
+                </Link >
+            )
+        })
+
+        return (
+            <Drawer
+                //title="Draw Menu"
+                placement="right"
+                visible={this.state.drawerVisible}
+                onClose={this.closeDrawer}
+                width={150}
+                headerStyle={{
+                    backgroundColor: bgColor
+                }}
+                drawerStyle={{
+                    backgroundColor: bgColor,
+                }}
+                bodyStyle={{
+                    padding: 0,
+                    paddingTop: "35px"
+                }}
+                closeIcon={null}
+            >
+                <div className="drawer-menu-div">
+                    {MenuItems}
+                </div>
+            </Drawer>
+        )
+    }
+
     render() {
         const innerWidth = this.state.innerWidth
-        const HeaderMenu = (innerWidth < 900) ? <this.SmallHeaderMenu/> : <this.BigHeaderMenu/>
+        const HeaderMenu = (innerWidth < 900) ? <this.SmallHeaderMenu /> : <this.BigHeaderMenu />
 
 
         return (
@@ -115,6 +165,10 @@ export default class CustomHeader extends Component {
                 <Col span={8} offset={8}>
                     {HeaderMenu}
                 </Col>
+
+
+                <this.DrawerMenu />
+
                 {/* <Col span={3}>
                     <a
                         href="/resume.pdf"
