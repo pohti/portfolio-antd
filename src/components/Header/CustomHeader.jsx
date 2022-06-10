@@ -101,7 +101,7 @@ export default class CustomHeader extends Component {
                 <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="drawer-menu-item"
                     style={{
                         color: isSelected && "#fff",
-                        backgroundColor: isSelected && "rgba(231, 119, 67, 0.287)"
+                        backgroundColor: isSelected && "rgba(223, 103, 47, 0.599)"
                     }}
                 >
                     {label}
@@ -116,12 +116,8 @@ export default class CustomHeader extends Component {
                 visible={this.state.drawerVisible}
                 onClose={this.closeDrawer}
                 width={150}
-                headerStyle={{
-                    backgroundColor: bgColor
-                }}
-                drawerStyle={{
-                    backgroundColor: bgColor,
-                }}
+                headerStyle={{ backgroundColor: bgColor }}
+                drawerStyle={{ backgroundColor: bgColor }}
                 bodyStyle={{
                     padding: 0,
                     paddingTop: "35px"
