@@ -27,8 +27,6 @@ export default class CustomHeader extends Component {
     }
 
     componentDidMount() {
-        const currentWidth = window.innerWidth
-        console.log(currentWidth)
         const path = extractPath()
         this.setState({ selectedMenuKeys: [path] })
 
@@ -65,7 +63,7 @@ export default class CustomHeader extends Component {
                 <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="header-menu-item"
                     style={{
                         color: isSelected && "#fff",
-                        backgroundColor: isSelected && "rgba(231, 119, 67, 0.287)"
+                        backgroundColor: isSelected && "rgba(223, 103, 47, 0.599)"
                     }}
                 >
                     {label}
@@ -100,10 +98,14 @@ export default class CustomHeader extends Component {
 
             // console.log(key, isSelected)
             return (
-                <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="drawer-menu-item"
+                <Link 
+                    to={`/${key}`} 
+                    onClick={() => this.handleMenuItemClick(key)} 
+                    key={key} 
+                    className="drawer-menu-item"
                     style={{
                         color: isSelected && "#fff",
-                        backgroundColor: isSelected && "rgba(231, 119, 67, 0.287)"
+                        backgroundColor: isSelected && "rgba(223, 103, 47, 0.599)"
                     }}
                 >
                     {label}
@@ -117,13 +119,9 @@ export default class CustomHeader extends Component {
                 placement="right"
                 visible={this.state.drawerVisible}
                 onClose={this.closeDrawer}
-                width={150}
-                headerStyle={{
-                    backgroundColor: bgColor
-                }}
-                drawerStyle={{
-                    backgroundColor: bgColor,
-                }}
+                width={200}
+                headerStyle={{ backgroundColor: bgColor }}
+                drawerStyle={{ backgroundColor: bgColor }}
                 bodyStyle={{
                     padding: 0,
                     paddingTop: "35px"
@@ -163,6 +161,12 @@ export default class CustomHeader extends Component {
 
 
                 <this.DrawerMenu />
+
+
+                {/* <div className="toggle-theme-button-container">
+                    <BulbOutlined /> {" "}
+                    <Switch size="small" defaultChecked/>
+                </div> */}
 
                 {/* <Col span={3}>
                     <a

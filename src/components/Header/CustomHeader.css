@@ -57,19 +57,19 @@
 
 .header-menu-item:hover {
     color: #fff;
-    background-color: rgba(231, 119, 67, 0.287);
+    background-color: var(--selected-menu-bg-color);
 }
 
 .drawer-menu-item {
     padding-left: 20px;
-    font-size: 17px;
+    font-size: 21px;
     width: 100%;
     line-height: 35px;
 }
 
 .drawer-menu-item:hover {
     color: #fff;
-    background-color: rgba(223, 103, 47, 0.599);
+    background-color: var(--selected-menu-bg-color);
 }
 
 .small-menu-icon-container {
