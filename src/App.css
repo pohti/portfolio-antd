@@ -31,7 +31,7 @@
   color: var(--main-font-color) !important;
 }
 
-.toggle-theme-button-container {
+/* .toggle-theme-button-container {
   position: absolute;
   z-index: 2;
   top: 40vh;
@@ -40,7 +40,7 @@
   line-height: 35px;
 
   padding: 15px;
-}
+} */
 
 
 .secondary-text {

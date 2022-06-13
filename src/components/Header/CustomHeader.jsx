@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Typography, Drawer, Switch } from 'antd'
-import { HomeOutlined, MenuOutlined, BulbOutlined } from '@ant-design/icons'
+import { Row, Col, Typography, Drawer } from 'antd'
+import { HomeOutlined, MenuOutlined } from '@ant-design/icons'
 
 import './CustomHeader.css'
 
@@ -63,7 +63,7 @@ export default class CustomHeader extends Component {
                 <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="header-menu-item"
                     style={{
                         color: isSelected && "#fff",
-                        backgroundColor: isSelected && "rgba(231, 119, 67, 0.287)"
+                        backgroundColor: isSelected && "rgba(223, 103, 47, 0.599)"
                     }}
                 >
                     {label}
@@ -98,7 +98,11 @@ export default class CustomHeader extends Component {
 
             // console.log(key, isSelected)
             return (
-                <Link to={`/${key}`} onClick={() => this.handleMenuItemClick(key)} key={key} className="drawer-menu-item"
+                <Link 
+                    to={`/${key}`} 
+                    onClick={() => this.handleMenuItemClick(key)} 
+                    key={key} 
+                    className="drawer-menu-item"
                     style={{
                         color: isSelected && "#fff",
                         backgroundColor: isSelected && "rgba(223, 103, 47, 0.599)"
@@ -115,7 +119,7 @@ export default class CustomHeader extends Component {
                 placement="right"
                 visible={this.state.drawerVisible}
                 onClose={this.closeDrawer}
-                width={150}
+                width={200}
                 headerStyle={{ backgroundColor: bgColor }}
                 drawerStyle={{ backgroundColor: bgColor }}
                 bodyStyle={{
@@ -159,10 +163,10 @@ export default class CustomHeader extends Component {
                 <this.DrawerMenu />
 
 
-                <div className="toggle-theme-button-container">
+                {/* <div className="toggle-theme-button-container">
                     <BulbOutlined /> {" "}
                     <Switch size="small" defaultChecked/>
-                </div>
+                </div> */}
 
                 {/* <Col span={3}>
                     <a
