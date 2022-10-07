@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Row, Col, Image } from 'antd'
 import './About.css'
 
-const imgURL = "https://media-exp1.licdn.com/dms/image/C5103AQFr27-SuBeXeg/profile-displayphoto-shrink_800_800/0/1517233913057?e=1659571200&v=beta&t=yUtgQb-nB9mtlAXV4V5wwMyExlthxRNPXJquTA9ahYc"
+const imgURL = "https://media-exp1.licdn.com/dms/image/C5103AQFr27-SuBeXeg/profile-displayphoto-shrink_800_800/0/1517233913057?e=1670457600&v=beta&t=GpSUTkFYXle8l6_oYLZHoj9w6WK95yKXERVsj3YjHNk"
 
 export default class About extends Component {
   render() {
