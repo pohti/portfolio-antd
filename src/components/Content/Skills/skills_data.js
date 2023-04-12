@@ -54,9 +54,9 @@ export const back_end_skills = [
     rating: 75,
   },
   {
-    skill_name: 'NoSQL',
+    skill_name: 'MongoDB',
     icon: null,
-    rating: 65,
+    rating: 85,
   },
   {
     skill_name: 'SQL and RDBMS',
