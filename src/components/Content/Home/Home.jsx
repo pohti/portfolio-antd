@@ -26,11 +26,11 @@ export default class Home extends Component {
               Currently, I am focused on creating clean and informative user interfaces at {" "}
               <a
                 target="_blank"
-                href="https://www.lucence.com/"
+                href="https://www.dormakaba.com/sg-en"
                 rel="noreferrer"
                 className="text-content-ref-links"
               >
-                Lucence</a>.
+                dormakaba</a>.
             </p>
           </div>
         </div>
