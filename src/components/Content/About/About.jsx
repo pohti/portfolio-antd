@@ -53,18 +53,18 @@ const AboutTextContent = () => (
           >
             University of Wollongong
         </a> {" "}
-        and worked on multiple projects to give myself a better understanding of how the 'web' works.
+        and worked on multiple real projects to give myself a better understanding of how the 'web' works.
       </p>
       <p>
-        I am currently working as a Software Engineer at {" "}
+        I am currently working as a Cloud Software Developer at {" "}
         <a
-            href="https://www.lucence.com/"
-            rel="noreferrer"
-            target="_blank"
-            className="text-content-ref-links"
-          >
-            Lucence
-        </a> {" "} -  a company that focuses on early cancer detection and diagnosis.
+          target="_blank"
+          href="https://www.dormakaba.com/sg-en"
+          rel="noreferrer"
+          className="text-content-ref-links"
+        >
+          dormakaba
+        </a> {" "} -  a global security tech company.
 
       </p>
 

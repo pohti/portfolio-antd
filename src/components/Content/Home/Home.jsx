@@ -17,13 +17,13 @@ export default class Home extends Component {
             <span style={{ fontSize: "17px" }} className="secondary-text">I am a..</span>
           </div>
           <div className="home-text-content-subtitle">
-            <span>Web Developer, Software Engineer</span>
+            <span>Software Engineer, Cloud Developer</span>
           </div>
 
           <div className="home-text-content">
             <p>
-              I specialize in building (and occasionally designing) web applications.
-              Currently, I am focused on creating clean and informative user interfaces at {" "}
+              I specialize in building (and occasionally designing) full stack web applications.
+              Currently, I am focused on Cloud based software solutions at {" "}
               <a
                 target="_blank"
                 href="https://www.dormakaba.com/sg-en"
